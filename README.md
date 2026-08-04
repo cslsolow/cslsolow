@@ -23,12 +23,11 @@ I work on **AI for Software Engineering**, especially LLM-based coding agents,
 repository-level code understanding, automated debugging, and evaluation for
 software issue resolution.
 
-> Correctness first. Elegance second. Decoration only when it does not reduce either.
-
 | Focus | What I Care About |
 | --- | --- |
 | Coding agents | perception, planning, memory, tool use, debugging, testing |
 | Repository-level SE | long-context code understanding, dependency reasoning, issue localization |
+| Issue synthesis | bug injection, task construction, reproducible issue generation |
 | Evaluation | SWE-bench style tasks, verifiable tests, benchmark reliability |
 | Research systems | reproducible pipelines, provenance, knowledge bases, paper engineering |
 
@@ -42,18 +41,6 @@ software issue resolution.
 | [SeeRepo](https://github.com/cslsolow/SeeRepo) | Helping LLM agents see and reason over code repositories |
 | [shanhaijing](https://github.com/cslsolow/shanhaijing) | LLM-compiled personal research knowledge base |
 | [Awesome-Repo-Level-Code-Generation](https://github.com/YerbaPage/Awesome-Repo-Level-Code-Generation) | Papers on repository-level code generation and issue resolution |
-
----
-
-### Current Research Threads
-
-```text
-Observe  -> repository perception and issue localization
-Plan     -> long-horizon agent planning and memory use
-Code     -> patch generation under real project constraints
-Test     -> verifiable feedback, regression tests, benchmark alignment
-Review   -> provenance, failure analysis, and research-grade evidence
-```
 
 ---
 
