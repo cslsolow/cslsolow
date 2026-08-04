@@ -37,10 +37,10 @@ software issue resolution.
 
 | Project | Stars | Direction |
 | --- | ---: | --- |
-| [SWE-Exp](https://github.com/cslsolow/SWE-Exp) | <img alt="SWE-Exp stars" src="./assets/stars-swe-exp.svg" /> | Experience-driven software issue resolution for LLM agents |
-| [SeeRepo](https://github.com/cslsolow/SeeRepo) | <img alt="SeeRepo stars" src="./assets/stars-seerepo.svg" /> | Helping LLM agents see and reason over code repositories |
-| [shanhaijing](https://github.com/cslsolow/shanhaijing) | <img alt="shanhaijing stars" src="./assets/stars-shanhaijing.svg" /> | LLM-compiled personal research knowledge base |
-| [Awesome-Repo-Level-Code-Generation](https://github.com/YerbaPage/Awesome-Repo-Level-Code-Generation) | <img alt="Awesome-Repo-Level-Code-Generation stars" src="./assets/stars-awesome-repo-level-code-generation.svg" /> | Papers on repository-level code generation and issue resolution |
+| [SWE-Exp](https://github.com/cslsolow/SWE-Exp) | <img alt="SWE-Exp stars" src="https://img.shields.io/github/stars/cslsolow/SWE-Exp?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=0b1220&color=111827&cacheSeconds=60" /> | Experience-driven software issue resolution for LLM agents |
+| [SeeRepo](https://github.com/cslsolow/SeeRepo) | <img alt="SeeRepo stars" src="https://img.shields.io/github/stars/cslsolow/SeeRepo?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=0b1220&color=111827&cacheSeconds=60" /> | Helping LLM agents see and reason over code repositories |
+| [shanhaijing](https://github.com/cslsolow/shanhaijing) | <img alt="shanhaijing stars" src="https://img.shields.io/github/stars/cslsolow/shanhaijing?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=0b1220&color=111827&cacheSeconds=60" /> | LLM-compiled personal research knowledge base |
+| [Awesome-Repo-Level-Code-Generation](https://github.com/YerbaPage/Awesome-Repo-Level-Code-Generation) | <img alt="Awesome-Repo-Level-Code-Generation stars" src="https://img.shields.io/github/stars/YerbaPage/Awesome-Repo-Level-Code-Generation?style=flat-square&label=stars&logo=github&logoColor=white&labelColor=0b1220&color=111827&cacheSeconds=60" /> | Papers on repository-level code generation and issue resolution |
 
 ---
 
