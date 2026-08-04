@@ -32,7 +32,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add assets/contribution-console.svg assets/language-console.svg assets/repository-console.svg
+          git add assets/*.svg
           git diff --cached --quiet && exit 0
           git commit -m "Refresh generated profile assets"
           git push

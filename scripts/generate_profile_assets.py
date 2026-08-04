@@ -18,6 +18,17 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parents[1]
 ASSETS = ROOT / "assets"
 USERNAME = os.getenv("PROFILE_USERNAME", "cslsolow")
+SELECTED_PROJECTS = [
+    ("SWE-Exp", "cslsolow", "SWE-Exp", "stars-swe-exp.svg"),
+    ("SeeRepo", "cslsolow", "SeeRepo", "stars-seerepo.svg"),
+    ("shanhaijing", "cslsolow", "shanhaijing", "stars-shanhaijing.svg"),
+    (
+        "Awesome-Repo-Level-Code-Generation",
+        "YerbaPage",
+        "Awesome-Repo-Level-Code-Generation",
+        "stars-awesome-repo-level-code-generation.svg",
+    ),
+]
 
 BG = "#0b1220"
 PANEL = "#111827"
@@ -163,6 +174,34 @@ def fetch_profile_data(token: str) -> dict[str, object]:
     return user
 
 
+def fetch_selected_projects(token: str) -> list[dict[str, object]]:
+    repo_query = """
+    query($owner: String!, $name: String!) {
+      repository(owner: $owner, name: $name) {
+        nameWithOwner
+        stargazerCount
+        forkCount
+      }
+    }
+    """
+
+    projects: list[dict[str, object]] = []
+    for label, owner, repo, filename in SELECTED_PROJECTS:
+        data = graphql(repo_query, {"owner": owner, "name": repo}, token)
+        repository = data["repository"]
+        projects.append(
+            {
+                "label": label,
+                "owner": owner,
+                "repo": repo,
+                "filename": filename,
+                "stars": int(repository["stargazerCount"]) if repository else None,
+                "forks": int(repository["forkCount"]) if repository else None,
+            }
+        )
+    return projects
+
+
 def calendar_days(profile: dict[str, object]) -> list[dict[str, object]]:
     collection = profile["contributionsCollection"]
     calendar = collection["contributionCalendar"]
@@ -226,6 +265,16 @@ def svg_header(width: int, height: int) -> str:
 
 def svg_footer() -> str:
     return "</svg>\n"
+
+
+def format_count(value: int | None) -> str:
+    if value is None:
+        return "n/a"
+    if value >= 1_000_000:
+        return f"{value / 1_000_000:.1f}m"
+    if value >= 1_000:
+        return f"{value / 1_000:.1f}k"
+    return str(value)
 
 
 def stat_card(x: int, y: int, width: int, label: str, value: object, sub: str) -> str:
@@ -344,13 +393,34 @@ def render_repository_console(profile: dict[str, object]) -> str:
     return svg + svg_footer()
 
 
-def write_assets(profile: dict[str, object]) -> None:
+def render_star_badge(project: dict[str, object]) -> str:
+    value = format_count(project["stars"])
+    label_width = 52
+    value_width = max(36, 18 + len(value) * 8)
+    width = label_width + value_width
+    height = 24
+
+    return f"""<svg width="{width}" height="{height}" viewBox="0 0 {width} {height}" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="{width}" height="{height}" rx="6" fill="{BG}"/>
+  <rect x="0.5" y="0.5" width="{width - 1}" height="{height - 1}" rx="5.5" stroke="{BORDER}"/>
+  <rect x="{label_width}" width="{value_width}" height="{height}" rx="6" fill="{PANEL}"/>
+  <path d="M10 8.8l1.24 2.51 2.77.4-2.01 1.96.47 2.76L10 15.13l-2.48 1.3.47-2.76-2-1.96 2.77-.4L10 8.8z" fill="{ACCENT}"/>
+  <text x="22" y="16" fill="{MUTED}" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="11">stars</text>
+  <text x="{label_width + value_width / 2:.1f}" y="16" fill="{TEXT}" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" font-weight="700" text-anchor="middle">{esc(value)}</text>
+</svg>
+"""
+
+
+def write_assets(profile: dict[str, object], projects: list[dict[str, object]]) -> None:
     ASSETS.mkdir(parents=True, exist_ok=True)
     files = {
         "contribution-console.svg": render_contribution_console(profile),
         "language-console.svg": render_language_console(profile),
         "repository-console.svg": render_repository_console(profile),
     }
+    for project in projects:
+        files[str(project["filename"])] = render_star_badge(project)
+
     for filename, content in files.items():
         (ASSETS / filename).write_text(content, encoding="utf-8")
         print(f"wrote assets/{filename}")
@@ -360,11 +430,12 @@ def main() -> int:
     token = get_token()
     try:
         profile = fetch_profile_data(token)
+        projects = fetch_selected_projects(token)
     except Exception as error:
         print(f"failed to fetch GitHub data: {error}", file=sys.stderr)
         return 1
 
-    write_assets(profile)
+    write_assets(profile, projects)
     return 0
 
 
