@@ -1,0 +1,27 @@
+<svg width="490" height="220" viewBox="0 0 490 220" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="490" y2="220" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0b1220"/>
+      <stop offset="0.58" stop-color="#111827"/>
+      <stop offset="1" stop-color="#172033"/>
+    </linearGradient>
+  </defs>
+  <rect width="490" height="220" rx="8" fill="url(#bg)"/>
+  <rect x="0.5" y="0.5" width="489" height="219" rx="7.5" stroke="#334155"/>
+  <text x="26" y="42" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="22" font-weight="800">Repository Console</text>
+  <text x="26" y="66" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">public source work, not third-party badges</text>
+  <rect x="26" y="86" width="136" height="82" rx="8" fill="#111827" stroke="#334155"/>
+  <text x="44" y="114" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">repos</text>
+  <text x="44" y="144" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700">19</text>
+  <text x="144" y="144" fill="#9fb3c8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">public</text>
+  <rect x="177" y="86" width="136" height="82" rx="8" fill="#111827" stroke="#334155"/>
+  <text x="195" y="114" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">stars</text>
+  <text x="195" y="144" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700">88</text>
+  <text x="295" y="144" fill="#9fb3c8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">total</text>
+  <rect x="328" y="86" width="136" height="82" rx="8" fill="#111827" stroke="#334155"/>
+  <text x="346" y="114" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">forks</text>
+  <text x="346" y="144" fill="#e2e8f0" font-family="Inter, system-ui, sans-serif" font-size="26" font-weight="700">4</text>
+  <text x="446" y="144" fill="#9fb3c8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">total</text>
+  <text x="26" y="194" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">recent: </text>
+  <text x="82" y="194" fill="#cbd5e1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">cslsolow · SeeRepo · shanhaijing · claude-session-m...</text>
+</svg>
