@@ -57,6 +57,32 @@ Review   -> provenance, failure analysis, and research-grade evidence
 
 ---
 
+### Contribution Console
+
+<p align="center">
+  <img width="100%" alt="GitHub activity graph" src="https://github-readme-activity-graph.vercel.app/graph?username=cslsolow&bg_color=0b1220&color=cbd5e1&line=9fb3c8&point=e2e8f0&area=true&area_color=334155&hide_border=true&custom_title=Contribution%20Trace" />
+</p>
+
+<p align="center">
+  <img height="165" alt="GitHub streak" src="https://streak-stats.demolab.com?user=cslsolow&theme=tokyonight-duo&hide_border=true&background=0B1220&stroke=64748B&ring=9FB3C8&fire=991B1B&currStreakLabel=CBD5E1&sideLabels=CBD5E1&dates=94A3B8" />
+  <img height="165" alt="GitHub stats" src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=cslsolow&theme=github_dark" />
+</p>
+
+<p align="center">
+  <img width="49%" alt="Most used commit languages" src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=cslsolow&theme=github_dark" />
+  <img width="49%" alt="Productive time" src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=cslsolow&theme=github_dark&utcOffset=8" />
+</p>
+
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cslsolow/cslsolow/output/github-contribution-grid-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/cslsolow/cslsolow/output/github-contribution-grid-snake.svg" />
+    <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/cslsolow/cslsolow/output/github-contribution-grid-snake.svg" />
+  </picture>
+</p>
+
+---
+
 ### Tech Stack
 
 <p align="left">
