@@ -12,14 +12,14 @@
   <text x="26" y="66" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12">primary languages across public source repos</text>
   <text x="28" y="92" fill="#cbd5e1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">Python</text>
   <rect x="150" y="81" width="300" height="10" rx="5" fill="#1e293b"/>
-  <rect x="150" y="81" width="192" height="10" rx="5" fill="#3572A5"/>
-  <text x="464" y="92" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">64%</text>
+  <rect x="150" y="81" width="187" height="10" rx="5" fill="#3572A5"/>
+  <text x="464" y="92" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">62%</text>
   <text x="28" y="119" fill="#cbd5e1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">Jupyter Notebook</text>
   <rect x="150" y="108" width="300" height="10" rx="5" fill="#1e293b"/>
-  <rect x="150" y="108" width="85" height="10" rx="5" fill="#DA5B0B"/>
-  <text x="464" y="119" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">29%</text>
+  <rect x="150" y="108" width="93" height="10" rx="5" fill="#DA5B0B"/>
+  <text x="464" y="119" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">31%</text>
   <text x="28" y="146" fill="#cbd5e1" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">JavaScript</text>
   <rect x="150" y="135" width="300" height="10" rx="5" fill="#1e293b"/>
-  <rect x="150" y="135" width="21" height="10" rx="5" fill="#f1e05a"/>
-  <text x="464" y="146" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">7%</text>
+  <rect x="150" y="135" width="18" height="10" rx="5" fill="#f1e05a"/>
+  <text x="464" y="146" fill="#94a3b8" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="12" text-anchor="end">6%</text>
 </svg>
